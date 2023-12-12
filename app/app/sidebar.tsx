@@ -1,5 +1,5 @@
 import { FaHome } from "react-icons/fa";
-import { FiChevronRight, FiFileText, FiFolder, FiHeadphones, FiHome, FiSmile, FiUser } from "react-icons/fi";
+import { FiChevronRight, FiColumns, FiFileText, FiFolder, FiHeadphones, FiHome, FiSmile, FiUser } from "react-icons/fi";
 import Link from 'next/link';
 
 export default function SideBar() {
@@ -29,6 +29,16 @@ export default function SideBar() {
                 <div className="flex flex-1 flex-col">
                     <span className="text-md">Projects</span>
                     <span className="text-sm text-zinc-400">Your projects</span>
+                </div>
+            </Link>
+
+            <Link href={'/app/projects/'} className="flex p-3 items-center gap-5 min-w-full">
+                <div className="flex flex-none">
+                    <FiColumns className='text-2xl'/>
+                </div>
+                <div className="flex flex-1 flex-col">
+                    <span className="text-md">Datasets</span>
+                    <span className="text-sm text-zinc-400">Manage your datasets</span>
                 </div>
             </Link>
 

@@ -20,9 +20,12 @@ export default function AppNavBar() {
 
             <div className="flex-none">
                 <ul className="menu menu-horizontal menu-end p-1 text-dacopsy-blue text-sm">
+                    
                     <li
                     className='text-blue-900 rounded-md'
-                    ><a className='font-semibold'>LOGOUT</a></li>
+                    >
+                        <a className='font-semibold'>LOGOUT</a>
+                    </li>
                 </ul>
             </div>
         </div>

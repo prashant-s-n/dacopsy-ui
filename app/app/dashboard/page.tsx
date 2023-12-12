@@ -1,12 +1,13 @@
+"use client";
 import { FaCircleQuestion } from "react-icons/fa6";
-import { FiBookmark, FiCoffee, FiCopy, FiEdit2, FiEdit3, FiFolder, FiHeart, FiInfo, FiPaperclip, FiPenTool, FiSmile, FiWatch } from "react-icons/fi";
+import { FiBookmark, FiBox, FiCheck, FiCheckCircle, FiCoffee, FiColumns, FiCopy, FiEdit2, FiEdit3, FiFolder, FiHeart, FiInfo, FiLoader, FiPaperclip, FiPenTool, FiPlay, FiSmile, FiTarget, FiWatch } from "react-icons/fi";
 
 export default function Dashboard() {
     return (
         <main className="max-h-screen p-3 bg-white rounded-md">
             <div className="flex flex-col">
                 <div className="flex p-5">
-                <span className="text-md">
+                <span className="font-bold text-lg text-zinc-500">
                     <FiBookmark className='inline mr-3 text-xl'/>Recent Projects
                 </span>
                 </div>
@@ -25,6 +26,7 @@ export default function Dashboard() {
                                 <span className="text-justify overflow-hidden">Can amusement parks have an educative purpose apart from an entertaining one?</span><br/>
                                 
                             </div>
+                            
                         </div>
                     </div>
 
@@ -40,6 +42,7 @@ export default function Dashboard() {
                                 <span className="text-justify overflow-hidden">Functional properties of coffee and coffee by-products </span><br/>
                                 
                             </div>
+                            
                         </div>
                     </div>
 
@@ -54,16 +57,60 @@ export default function Dashboard() {
 
                                 <span className="text-justify overflow-hidden">National Institute of Health </span><br/>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* Running Datasets */}
+            <div className="flex flex-col">
+            <div className="flex p-5">
+            <span className="font-bold text-lg text-zinc-500">
+                <FiPlay className='inline mr-3 text-xl'/>Recent datasets
+            </span>
+            </div>
+
+            <div className="grid grid-cols-12 gap-8 p-2 min-w-full">
+                <div className="col-span-3 border border-zinc-300 rounded-md">
+                    <div className="grid grid-cols-12 rounded-md p-3">
+                        <div className="col-span-3 p-4">
+                            <FiLoader className='animate-spin text-2xl ml-auto mr-auto'/>
+                        </div>
+                        <div className="col-span-9">
+                            Composing - Bivariate Regression
+                        </div>
+                        <div className="col-span-12 col-start-4">
+                            <span className="text-zinc-400 text-sm" >
+                                Antarctic Glacier data
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-span-3 border border-zinc-300 rounded-md">
+                    <div className="grid grid-cols-12 rounded-md p-3">
+                        <div className="col-span-3 p-4">
+                            <FiTarget className='animate-ping text-blue-300 text-2xl ml-auto mr-auto'/>
+                        </div>
+                        <div className="col-span-9">
+                            Syncing data - Man Whitney U Test
+                        </div>
+                        <div className="col-span-12 col-start-4">
+                            <span className="text-zinc-400 text-sm" >
+                                Old World Monkeys - South America
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
             {/* Promo code */}
             <div className="flex flex-col">
                 <div className="flex p-2">
-                <span className="text-md p-5">
-                    <FiHeart className='inline mr-3 text-xl'/>Promotion
+                <span className="text-lg p-5 font-bold text-zinc-500">
+                    <FiHeart className='inline mr-3 text-xl'/>Promotions
                 </span>
                 </div>
 
