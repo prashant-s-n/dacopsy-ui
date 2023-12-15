@@ -7,9 +7,13 @@
     background-color: #FFFFFF;
 }
 
+body {
+  font-family: var(--font-dm-sans)
+}
+
 @layer base {
     main {
-        @apply bg-zinc-100;  
+        @apply bg-zinc-100;
     }
     body {
       @apply bg-zinc-100;
@@ -57,4 +61,17 @@
         --b3: 0.924169 0.00108 197.137559;
         --bc: 0.278078 0.029596 256.847952;
     }
+  }
+
+
+  .landing-title {
+    font-family: var(--font-inter);
+  }
+
+  .intro-rhetoric {
+    font-family: var(--font-inter);
+  }
+
+  .inter-title {
+    font-family: var(--font-inter);
   }

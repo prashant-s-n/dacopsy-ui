@@ -1,8 +1,26 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Bebas_Neue, DM_Sans, Inter, Raleway } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['200', '400'], variable:'--font-inter'})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['200', '400'],
+  variable:'--font-dm-sans'
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-bebas-neue',
+});
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['200','400'],
+  variable: '--font-raleway',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Dacopsy</title>  
-      <body className={inter.className}>{children}</body>
+      <body className={`${dmSans.variable} ${bebasNeue.variable} ${raleway.variable} ${inter.variable}`}>{children}</body>
     </html>
   )
 }
