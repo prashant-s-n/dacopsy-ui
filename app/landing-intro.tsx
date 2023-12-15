@@ -1,30 +1,31 @@
 import { url } from "inspector";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowDown, FaArrowLeft, FaArrowRight, FaCircleCheck, FaFaceSmile } from "react-icons/fa6";
-
+import { FaArrowDown, FaArrowLeft, FaArrowRight, FaBook, FaCircleCheck, FaFaceSmile, FaGraduationCap, FaHourglass, FaIndustry, FaSchool } from "react-icons/fa6";
 
 export default function LandingIntro() {
     return (
-        <div className="flex min-h-screen items-center bg-gradient-to-r from-sky-400 via-blue-400 to-sky-600">
+        <div className="flex min-h-screen items-center bg-gradient-to-r from-sky-100 via-blue-100 to-sky-200">
             <div className="grid grid-cols-12 gap-1">
-                <div className="col-span-5 col-start-3 h-fit p-10 rounded-lg justify-start">
-                    <div className="text-7xl text-white content-center">
+                <div className="col-span-5 col-start-3 h-fit p-10 rounded-lg items-center justify-start">
+                    <div className="text-6xl text-dacopsy-blue content-center landing-title">
                         Cooking Data, <br />Crafting Discoveries
                     </div>
-                    <div className="text-lg text-zinc-100 p-1 content-center mt-10 mb-10">
+                    <div className="text-lg text-black p-1 content-center mt-10 mb-10">
                         Dacopsy aims to cater as a tool which would be helpful for
                         pretesting hypothesis and teaching for researchers across the globe.
                     </div>
-                    <div>
-                        <Link href={'/'} className="text-white inline">
+                    <div className="border border-blue-500 p-4 w-fit rounded-md cursor-pointer">
+                        <Link href={'/'} className="text-blue-500 inline">
                             Learn more <FaArrowRight className="inline" />
                         </Link>
                     </div>
                 </div>
                 <div className="col-span-3 justify-items">
 
-                    <div className="card w-fit h-3/4 image-full  mt-4 shadow-lg" >
+                
+
+                    <div className="card w-fit h-3/4 image-full  mt-4 shadow-lg ease-in duration-300" >
                         {/* <figure><img src="/stats.jpg" alt="Shoes" /></figure> */}
                         <div className="card-body bg-white rounded-md">
                             <h2 className="card-title p-2 text-zinc-900">Schedule a demo</h2>
@@ -33,7 +34,7 @@ export default function LandingIntro() {
                             <div className="card-actions p-1 flex-col">
                                 <input type="email" placeholder="Your email" className="bg-zinc-100 input w-full max-w-xs" />
                                 <input type="text" placeholder="Your full name" className="bg-zinc-100 input w-full max-w-xs" />
-                                <button className="btn w-full bg-dacopsy-blue text-white border-none mt-5">Schedule</button>
+                                <button className="btn w-full bg-zinc-500 text-white border-none mt-5">Schedule</button>
 
                                 <div className="form-control p-2 flex">
                                     <label className="label cursor-pointer">
@@ -48,7 +49,7 @@ export default function LandingIntro() {
                         </div>
                     </div>
 
-
+                    
 
                 </div>
             </div>

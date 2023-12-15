@@ -12,6 +12,7 @@ const config: Config = {
         'DM Sans',
         'Roboto',
         'sans-serif',
+        'Bebas Neue'
       ],
     },
   },
