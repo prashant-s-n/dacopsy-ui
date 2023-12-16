@@ -13,7 +13,9 @@ export default function WorkspaceLayout({
                     <SideBar/>
                 </div>
                 <div className="col-span-10">
-                    <Stage children={children}/>
+                    <Stage>
+                        {children}
+                    </Stage>
                 </div>
             </div>
        </main>

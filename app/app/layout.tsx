@@ -41,7 +41,9 @@ export default function AppLayout({
       <body 
         className={`${dmSans.variable} ${bebasNeue.variable} ${raleway.variable} ${inter.variable}`}>
             <AppNavBar/>
-            <WorkspaceLayout children={children}/>
+            <WorkspaceLayout>
+                {children}
+            </WorkspaceLayout>
         </body>
     </html>
   )
