@@ -5,9 +5,16 @@ import { FaArrowDown, FaArrowLeft, FaArrowRight, FaBook, FaCircleCheck, FaFaceSm
 
 export default function LandingIntro() {
     return (
+        
+
         <div className="flex min-h-screen items-center bg-gradient-to-r from-sky-100 via-blue-100 to-sky-200">
+            <div className="absolute bottom-0 inset-x-0 text-center p-5">
+                <button className="shadow-lg bg-white p-3 text-xs rounded-3xl">
+                    <FaArrowDown/>
+                </button>
+            </div>
             <div className="grid grid-cols-12 gap-1">
-                <div className="col-span-5 col-start-3 h-fit p-10 rounded-lg items-center justify-start">
+                <div className="col-span-5 col-start-3 h-fit p-8 rounded-lg items-center justify-start">
                     <div className="text-6xl text-dacopsy-blue content-center landing-title">
                         Cooking Data, <br />Crafting Discoveries
                     </div>
@@ -22,9 +29,6 @@ export default function LandingIntro() {
                     </div>
                 </div>
                 <div className="col-span-3 justify-items">
-
-                
-
                     <div className="card w-fit h-3/4 image-full  mt-4 shadow-lg ease-in duration-300" >
                         {/* <figure><img src="/stats.jpg" alt="Shoes" /></figure> */}
                         <div className="card-body bg-white rounded-md">
