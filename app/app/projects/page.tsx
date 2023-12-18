@@ -95,7 +95,7 @@ export default function Projects() {
                     {
                         projects && projects.map((project) => {
                             return (
-                            <div className="col-span-12 shadow-md flex flex-row overflow-clip mb-4 rounded-md cursor-pointer bg-blue-50">
+                            <div key={project.title} className="col-span-12 shadow-md flex flex-row overflow-clip mb-4 rounded-md cursor-pointer bg-blue-50">
 
                                     
 
