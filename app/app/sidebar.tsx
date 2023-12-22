@@ -1,13 +1,21 @@
+'use client';
 import { FaHome } from "react-icons/fa";
 import { FiChevronRight, FiColumns, FiFileText, FiFolder, FiHeadphones, FiHome, FiSmile, FiUser } from "react-icons/fi";
 import Link from 'next/link';
+import { usePathname } from "next/navigation";
+import classNames from 'classnames';
 
 export default function SideBar() {
+
+    const pathName = usePathname();
+
     return (
         <div className="flex flex-col p-4 spacing-1 items-start bg-white min-h-full">
-            
-            <Link href={'/app/'} className="flex p-3 items-center gap-5 min-w-full bg-zinc-100 rounded-md cursor-pointer hover:bg-zinc-200">
-                
+            <Link href={'/app/'} 
+                className={classNames("flex p-3 items-center gap-5 min-w-full rounded-md cursor-pointer hover:bg-zinc-100", {
+                    'bg-zinc-200': pathName === '/app'
+                })}
+            >
                 <div className="flex flex-none">
                     <FiHome className='text-2xl'/>
                 </div>
@@ -21,8 +29,11 @@ export default function SideBar() {
                 
             </Link>
             
-
-            <Link href={'/app/projects/'} className="flex p-3 items-center gap-5 min-w-full">
+            <Link href={'/app/projects/'} 
+                className={classNames("flex p-3 items-center gap-5 min-w-full rounded-md cursor-pointer hover:bg-zinc-100", {
+                    'bg-zinc-200': pathName === '/app/projects'
+                })}
+            >
                 <div className="flex flex-none">
                     <FiFolder className='text-2xl'/>
                 </div>
@@ -32,7 +43,11 @@ export default function SideBar() {
                 </div>
             </Link>
 
-            <Link href={'/app/projects/'} className="flex p-3 items-center gap-5 min-w-full">
+            <Link href={'/app/datasets/'} 
+                className={classNames("flex p-3 items-center gap-5 min-w-full rounded-md cursor-pointer hover:bg-zinc-100", {
+                    'bg-zinc-200': pathName === '/app/datasets'
+                })}
+            >
                 <div className="flex flex-none">
                     <FiColumns className='text-2xl'/>
                 </div>
@@ -42,7 +57,7 @@ export default function SideBar() {
                 </div>
             </Link>
 
-            <div className="flex p-3 items-center gap-5 min-w-full">
+            <Link href={'/app/datasets'} className="flex p-3 items-center gap-5 min-w-full">
                 <div className="flex flex-none">
                     <FiUser className='text-2xl'/>
                 </div>
@@ -50,7 +65,7 @@ export default function SideBar() {
                     <span className="text-md">Profile</span>
                     <span className="text-sm text-zinc-400">Manage your Profile</span>
                 </div>
-            </div>
+            </Link>
 
             <div className="flex p-3 items-center gap-5 min-w-full">
                 <div className="flex flex-none">

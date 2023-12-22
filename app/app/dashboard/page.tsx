@@ -7,14 +7,12 @@ export default function Dashboard() {
         <main className="max-h-screen p-3 bg-white rounded-md">
             <div className="flex flex-col">
                 <div className="flex p-5">
-                <span className="font-bold text-lg text-zinc-500">
+                <span className="font-semibold text-lg text-zinc-500">
                     <FiBookmark className='inline mr-3 text-xl'/>Recent Projects
                 </span>
                 </div>
 
                 <div className="grid grid-cols-12 gap-8 p-2 min-w-full">
-                    
-
                     <div className="col-span-3">
                         <div className="grid grid-cols-12 min-h-full bg-zinc-50 rounded-md border border-blue-80">
                             <div className="col-span-12 p-8 items-center rounded-md">
@@ -66,7 +64,7 @@ export default function Dashboard() {
             {/* Running Datasets */}
             <div className="flex flex-col">
             <div className="flex p-5">
-            <span className="font-bold text-lg text-zinc-500">
+            <span className="font-semibold text-lg text-zinc-500">
                 <FiPlay className='inline mr-3 text-xl'/>Recent datasets
             </span>
             </div>
@@ -109,7 +107,7 @@ export default function Dashboard() {
             {/* Promo code */}
             <div className="flex flex-col">
                 <div className="flex p-2">
-                <span className="text-lg p-5 font-bold text-zinc-500">
+                <span className="text-lg p-5 font-semibold text-zinc-500">
                     <FiHeart className='inline mr-3 text-xl'/>Promotions
                 </span>
                 </div>

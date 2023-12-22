@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['200', '400'], variable:'--fo
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['200', '400'],
+  weight: ['200', '400', '500' , '600', '700', '800','900', '1000'],
   variable:'--font-dm-sans'
 });
 
