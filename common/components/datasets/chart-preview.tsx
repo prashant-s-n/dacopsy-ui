@@ -7,9 +7,7 @@ import {
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 
-export default function DataSetChartPreview() {
-
-
+export default function ChartPreview() {
     const mean = 0;
     const stdDev = 1;
     const size = 100;
@@ -28,6 +26,7 @@ export default function DataSetChartPreview() {
                 data: yValues,
                 borderColor: '#509bff',
                 fill: true,
+                backgroundColor:'red'
 
             },
         ],

@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react";
 import { FaWindowClose } from "react-icons/fa";
 import { FiExternalLink, FiLogOut, FiX, FiZoomOut } from "react-icons/fi";
-import DataSetChartPreview from "./data-config-chart-preview";
+import DataSetChartPreview from "./chart-preview";
+import ChartPreview from "./chart-preview";
 
 
 type Props = {
@@ -11,16 +12,13 @@ type Props = {
     exitHandler: any;
 }
 
-export default function DataSetConfigPopup(props: Props) {
+export default function DatasetConfigurator(props: Props) {
 
     return (
         <dialog id="my_modal_1" className="modal" open={props.isOpen}>
-            <div className="modal-backdrop bg-zinc-100 opacity-40"></div>
+            <div className="modal-backdrop bg-zinc-300 opacity-80"></div>
             <div className="modal-box max-w-5xl min-h-fit bg-white">
-
-
                 <div className="modal-body ">
-
                     <div className="flex flex-row">
                         <div className="flex flex-1 p-3 flex-col">
                             <div className="flex flex-1 flex-col p-3">
@@ -147,7 +145,7 @@ export default function DataSetConfigPopup(props: Props) {
                             </div>
                         </div>
                         <div className="flex flex-1">
-                            <DataSetChartPreview />
+                            <ChartPreview />
                         </div>
                     </div>
                 </div>

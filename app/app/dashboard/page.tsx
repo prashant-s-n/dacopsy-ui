@@ -117,7 +117,7 @@ export default function Dashboard() {
         <div className='grid grid-cols-12 p-2 min-w-full'>
           <div className='col-span-3 p-6 rounded-md bg-gradient-to-r from-sky-600 via-blue-500 to-indigo-500'>
             <span className='text-lg text-white inter-title'>
-                            Refer your friends/colleagues/fellow researchers and get free usage credits upto $100 *
+              {`Refer your friends/colleagues/fellow researchers and get free usage credits upto $100 *`}
             </span>
 
             <span className='text-sm text-zinc-100 block mb-5 mt-5'>

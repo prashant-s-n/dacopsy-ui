@@ -64,7 +64,7 @@ export default function Features() {
                                     Plenty of Statistical functions to play around
                 </span>
                 <span className='text-md text-zinc-400 block'>
-                                    Perform test such as One-way ANOVA, Mixed ANOVA, Krushal Wallis Test, T-tests and more.
+                  {`Perform test such as One-way ANOVA, Mixed ANOVA, Krushal Wallis Test, T-tests and more.`}
                 </span>
               </div>
             </div>

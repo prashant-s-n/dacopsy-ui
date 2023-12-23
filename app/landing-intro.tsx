@@ -44,7 +44,7 @@ export default function LandingIntro() {
 
                     <input type='checkbox' className='checkbox [--chkbg:theme(colors.blue.600)] ' />
                     <span className='label-text ml-3 text-xs text-zinc-400'>
-                                        By using our services, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions
+                      {`By using our services, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions`}
                     </span>
                   </label>
                 </div>

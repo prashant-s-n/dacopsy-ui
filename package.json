@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint ./app/* --fix"
+    "lint:fix": "eslint ./app/* --fix --ext .ts,.tsx"
   },
   "dependencies": {
     "classname": "^0.0.0",

@@ -4,7 +4,7 @@ import {
   FiColumns, FiDatabase, FiSearch, FiSettings,
 } from 'react-icons/fi';
 import { useState } from 'react';
-import DataSetConfigPopup from '@/common/components/datasets/dataset-config-popup';
+import DatasetConfigurator from '@/common/components/datasets/dataset-configurator';
 
 export default function Projects() {
   const [open, setOpen] = useState(false);
@@ -32,6 +32,30 @@ export default function Projects() {
       date: '13th December 2023',
       count: '14K',
     },
+    {
+      id: '3',
+      title: 'Normal Dist - 3',
+      date: '13th December 2023',
+      count: '14K',
+    },
+    {
+      id: '4',
+      title: 'Normal Dist - 3',
+      date: '13th December 2023',
+      count: '14K',
+    },
+    {
+      id: '5',
+      title: 'Normal Dist - 3',
+      date: '13th December 2023',
+      count: '14K',
+    },
+    {
+      id: '6',
+      title: 'Normal Dist - 3',
+      date: '13th December 2023',
+      count: '14K',
+    },
 
   ];
 
@@ -48,7 +72,6 @@ export default function Projects() {
                 <span className='text-sm text-zinc-500'>
                                     See your data in action!
 
-                  <h1>{JSON.stringify(open)}</h1>
                 </span>
               </div>
             </div>
@@ -101,8 +124,8 @@ export default function Projects() {
 
                 <div className='flex flex-col mt-2 border border-zinc-200 rounded-lg divide-y divide-zinc-200 divide-solid'>
                   {datasets && datasets.map((dataset) => (
-                    <>
-                      <div className='flex flex-row cursor-pointer items-center p-3 hover:bg-zinc-100' key={dataset.id}>
+                    <section key={dataset.id}>
+                      <div className='flex flex-row cursor-pointer items-center p-3 hover:bg-zinc-100' >
                         <div className='flex-none p-4'>
                           <FiDatabase className='text-3xl' />
                         </div>
@@ -119,7 +142,7 @@ export default function Projects() {
                           />
                         </div>
                       </div>
-                    </>
+                    </section>
                   ))}
                 </div>
 
@@ -134,7 +157,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <DataSetConfigPopup
+      <DatasetConfigurator
         isOpen={open}
         exitHandler={() => setOpen(false)}
       />
